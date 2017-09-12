@@ -1,0 +1,65 @@
+            /* reset */
+            *{margin:0; padding:0;border:0;}
+            img{border:0;vertical-align:middle;}
+            ul,ol,dl{list-style:none;}
+            html, body{height: 100%;}
+            body {font-size:12px; font-family:arial, "Microsoft YaHei", simsun; line-height:20px;}
+    
+    		.slide {
+                position:relative;
+                width:100%;
+                height:100%;
+                overflow: hidden;
+            }
+    		.slide .content {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+            }
+    		.slide .content li {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                -webkit-background-size: cover;
+                background-size: cover;
+                line-height: 400px;
+                text-align: center;
+                color: #fff;
+                font-size:100px;
+                background-color: #fffbe0;
+            }
+    
+            .slide .content li .pic {
+                width: 80%;
+                height: 60%;
+                margin: 20% auto 5%;
+            }
+            .slide .content li .text {
+                width: 80%;
+                height: 15%;
+                margin: 0 auto;
+                color: #b3b3b3;
+                text-align: center;
+                font-size: 16px;
+                font-family: '微软雅黑';
+                line-height: 26px;
+                word-break: break-all;
+            }
+    
+            .slide .content li:nth-child(1) .pic{
+                background: url(./test.jpg) 0 0 no-repeat;
+                background-size: 100%;
+            }
+    		.slide .content li:nth-child(2) .pic{
+                background: url(./test2.jpg) 0 0 no-repeat;
+                background-size: 100%;
+            }
+    		.slide .content li:nth-child(3) .pic{
+                background: url(./test.jpg) 0 0 no-repeat;
+                background-size: 100%;
+            }
+    		.slide .content li:nth-child(4) .pic{
+                background: url(./test2.jpg) 0 0 no-repeat;
+                background-size: 100%;
+            }
+
