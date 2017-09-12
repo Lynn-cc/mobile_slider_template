@@ -33,6 +33,9 @@
                 width: 80%;
                 height: 60%;
                 margin: 20% auto 5%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: 0 0;
             }
             .slide .content li .text {
                 width: 80%;
@@ -47,19 +50,26 @@
             }
     
             .slide .content li:nth-child(1) .pic{
-                background: url(./test.jpg) 0 0 no-repeat;
-                background-size: 100%;
+                background: url(./test.jpg);
             }
     		.slide .content li:nth-child(2) .pic{
-                background: url(./test2.jpg) 0 0 no-repeat;
-                background-size: 100%;
+                background: url(./test2.jpg);
             }
     		.slide .content li:nth-child(3) .pic{
-                background: url(./test.jpg) 0 0 no-repeat;
-                background-size: 100%;
+                background: url(./test.jpg);
             }
     		.slide .content li:nth-child(4) .pic{
-                background: url(./test2.jpg) 0 0 no-repeat;
-                background-size: 100%;
+                background: url(./test2.jpg);
             }
-
+    		.slide .content li:nth-child(5) .pic{
+                background: url(./test.jpg);
+            }
+    		.slide .content li:nth-child(6) .pic{
+                background: url(./test2.jpg);
+            }
+    		.slide .content li:nth-child(7) .pic{
+                background: url(./test.jpg);
+            }
+    		.slide .content li:nth-child(8) .pic{
+                background: url(./test2.jpg);
+            }
