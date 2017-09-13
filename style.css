@@ -1,75 +1,144 @@
-            /* reset */
-            *{margin:0; padding:0;border:0;}
-            img{border:0;vertical-align:middle;}
-            ul,ol,dl{list-style:none;}
-            html, body{height: 100%;}
-            body {font-size:12px; font-family:arial, "Microsoft YaHei", simsun; line-height:20px;}
-    
-    		.slide {
-                position:relative;
-                width:100%;
-                height:100%;
-                overflow: hidden;
-            }
-    		.slide .content {
-                width: 100%;
-                height: 100%;
-                margin: 0 auto;
-            }
-    		.slide .content li {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                -webkit-background-size: cover;
-                background-size: cover;
-                line-height: 400px;
-                text-align: center;
-                color: #fff;
-                font-size:100px;
-                background-color: #fffbe0;
-            }
-    
-            .slide .content li .pic {
-                width: 80%;
-                height: 60%;
-                margin: 20% auto 5%;
-                background-size: 100%;
-                background-repeat: no-repeat;
-                background-position: 0 0;
-            }
-            .slide .content li .text {
-                width: 80%;
-                height: 15%;
-                margin: 0 auto;
-                color: #b3b3b3;
-                text-align: center;
-                font-size: 16px;
-                font-family: '微软雅黑';
-                line-height: 26px;
-                word-break: break-all;
-            }
-    
-            .slide .content li:nth-child(1) .pic{
-                background-image: url(./test.jpg);
-            }
-    		.slide .content li:nth-child(2) .pic{
-                background-image: url(./test2.jpg);
-            }
-    		.slide .content li:nth-child(3) .pic{
-                background-image: url(./test.jpg);
-            }
-    		.slide .content li:nth-child(4) .pic{
-                background-image: url(./test2.jpg);
-            }
-    		.slide .content li:nth-child(5) .pic{
-                background-image: url(./test.jpg);
-            }
-    		.slide .content li:nth-child(6) .pic{
-                background-image: url(./test2.jpg);
-            }
-    		.slide .content li:nth-child(7) .pic{
-                background-image: url(./test.jpg);
-            }
-    		.slide .content li:nth-child(8) .pic{
-                background-image: url(./test2.jpg);
-            }
+/* reset */
+*{margin:0; padding:0;border:0;}
+img{border:0;vertical-align:middle;}
+ul,ol,dl{list-style:none;}
+html, body{height: 100%;}
+body {font-size:12px; font-family:arial, "Microsoft YaHei", simsun; line-height:20px;}
+
+.slide {
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+@keyframes star {
+    0% {opacity: 0;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes star {
+    0% {opacity: 0;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.star li{
+    width: 40px;
+    height: 40px;
+    zoom: 0.5;
+    position: absolute;
+    z-index: 9999;
+    opacity: 0;
+    background-repeat: no-repeat;
+    animation-name: star;
+    -webkit-animation-name: star;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.star li:nth-child(4n) {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    background-image: url(./img/wstar1.png);
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.star li:nth-child(4n+1) {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    background-image: url(./img/wstar2.png);
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+}flip
+.star li:nth-child(4n+2) {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    background-image: url(./img/wstar3.png);
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+}
+.star li:nth-child(4n+3) {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    background-image: url(./img/wstar4.png);
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+}
+
+.slide .content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.slide .content li {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: #0a4092;
+    line-height: 400px;
+    text-align: center;
+    color: #fff;
+    font-size:100px;
+}
+
+.slide .content li .pic {
+    min-width: 140%;
+    min-height: 140%;
+    margin: -10% auto -5%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.slide .content li .text {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    line-height: 26px;
+    word-break: break-all;
+}
+.slide .content li:nth-child(odd) .text {
+    color: #f1f1f1;
+    text-shadow: #e4e4e4 2px 2px 5px;
+}
+.slide .content li:nth-child(even) .text {
+    color: #2f2f2f;
+    text-shadow: #4e4e4e 2px 2px 5px;
+}
+
+
+.slide .content li:nth-child(1) .pic{
+    background-image: url(./test.jpg);
+}
+.slide .content li:nth-child(2) .pic{
+    background-image: url(./test2.jpg);
+}
+.slide .content li:nth-child(3) .pic{
+    background-image: url(./test.jpg);
+}
+.slide .content li:nth-child(4) .pic{
+    background-image: url(./test2.jpg);
+}
+.slide .content li:nth-child(5) .pic{
+    background-image: url(./test.jpg);
+}
+.slide .content li:nth-child(6) .pic{
+    background-image: url(./test2.jpg);
+}
+.slide .content li:nth-child(7) .pic{
+    background-image: url(./test.jpg);
+}
+.slide .content li:nth-child(8) .pic{
+    background-image: url(./test2.jpg);
+}
